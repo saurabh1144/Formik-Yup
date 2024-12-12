@@ -1,0 +1,27 @@
+.email{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    width: 20rem;
+    background: rgb(134, 196, 212);
+    margin: 1rem 2rem;
+    padding: 2rem 2rem;
+   
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-error{
+    border-color: red;
+
+}
+.para{
+    color: red;
+}
+button:disabled{
+    opacity: 0.35;
+}
