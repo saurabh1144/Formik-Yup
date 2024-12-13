@@ -1,0 +1,11 @@
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.btn{
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+}

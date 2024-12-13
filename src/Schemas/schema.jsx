@@ -10,3 +10,10 @@ const passwordRule=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@.#$!%*?&])[A-Za-z\d@.#
     cnfpassword:yup.string().oneOf([yup.ref('password'),null],"Password must match").required(),
 
 })
+
+export const advancedSchema=yup.object().shape({
+    name:yup.string().min(3,"username must be 3 chars long").required("Required"),
+    jobType:yup.string().oneOf(['designer','developer','manager'],).required(),
+    accept:yup.boolean().oneOf([true],"Please accept the trems")
+
+})
